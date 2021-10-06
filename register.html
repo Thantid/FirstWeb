@@ -8,21 +8,29 @@
     <title>Register</title>
 </head>
 <body>
-<form>
-   กรอกชื่อ : <input type="text">
-  <p> นามสกุล : <input type="text"></p>
+  <form>
+ 
+  <p> กรอกชื่อ   : <input type="text"></p>
+  <p> นามสกุล   : <input type="text"></p>
   <p> username : <input type="text"></p>
   <p> password : <input type="password"></p>
-  <p> วันเกิด : <input type="date"></p>
+  <p> วันเกิด    : <input type="date"></p>
   <p> น้ำหนัก : <input type="number"min ="1" max= "500"></p>
+  <p> ส่วนสูง : <input type="number"min ="1" max= "300"></p>
+  <p> สีที่ชอบ : <input type="color"></p>
   <p> Email : <input type="email"></p>
-  <input type="submit"value = "ตกลง">
-  <input type="reset"value = "ยกเลิก">
   <p><input type="radio"name = "Gender"value = "Male">ชาย
   <input type="radio"name = "Gender"value = "Female">หญิง</p>
-  <input type="checkbox" name="Subject1" value="C++"> C++
-  <input type="checkbox" name="Subject2" value="Elec"> Elec
-  <input type="checkbox" name="Subject3" value="BasicCom"> BasicCom/
+  <input type="checkbox" name="Subject1" value="Thai"> Thai
+  <input type="checkbox" name="Subject2" value="America"> America
+  <input type="checkbox" name="Subject3" value="Canada"> Canada
+  <br> <br>
+  <label for="myfile">Select a picture:</label><br>
+  <input type="file" id="myfile" name="myfile">
+  </form>
+  <br> 
+   <input type="submit"value = "ตกลง">
+  <input type="reset"value = "ยกเลิก">
 </form>
 </body>
 </html>
