@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="300"
+      height="150"
+      style="border: 0px solid #d3d3d3"
+    >
+      Your browser does not support the HTML5 canvas tag.</canvas
+    >
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.strokeRect(0, 0, 200, 100);
+    
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+
+      ctx.moveTo(0, 100);
+      ctx.lineTo(200, 0);
+      ctx.stroke();
+
+      ctx.moveTo(0, 50);
+      ctx.lineTo(200, 50);
+      ctx.stroke();
+
+      ctx.moveTo(100, 0);
+      ctx.lineTo(100, 100);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(100, 50, 50, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World", 25, 50);
+      ctx.font = "30px Arial";
+      ctx.fillText("KMUTNB", 35, 100);
+    </script>
+  </body>
+</html>
